@@ -1,0 +1,365 @@
+/* Add animations */
+.animated-text {
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.animated-text span {
+    position: relative;
+}
+
+.animated-text span::before {
+    content: "Youtuber";
+    color: blue;
+    animation: words 20s infinite;
+}
+
+.animated-text span::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 103%;
+    background-color: #e6e6e6;
+    border-left: 2px solid blue;
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to {
+        border-left: 2px solid #ff7f5000;
+    }
+}
+
+@keyframes words {
+    0%, 20% {
+        content: "HTML";
+    }
+    21%, 40% {
+        content: "CSS";
+    }
+    41%, 60% {
+        content: "JavaScript";
+    }
+    61%, 80% {
+        content: "Java";
+    }
+    81%, 100% {
+        content: "C++";
+    }
+}
+
+@keyframes typing {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+        width: calc(100% + 8px);
+    }
+}
+
+
+
+body {
+    
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+   
+    z-index:3;
+   position: fixed;
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: blue;
+    text-decoration: none;
+    
+   
+}
+
+/* Section Styles */
+section {
+    padding: 50px;
+}
+#about img[alt="image"]{
+    float:right;
+    width:40%;
+    /* margin-top: 0%; */
+   
+
+}
+.socialMedia{
+    display:inline-block;
+    position:relative;
+    left: 30%;
+    padding-top:5%;
+}
+img[alt="linkedin_image"]{
+    display:inline-block;
+    width:20%;
+    
+    padding-right:5%;
+}
+img[alt="github_image"]{
+    display:inline-block;
+    width:20%;
+    
+    padding-right:5%;
+}
+img[alt="x_image"]{
+    display:inline-block;
+    width:20%;
+    /* float: right; */
+    padding-right:5%;
+}
+
+#about {
+    padding-top: 200px;
+    
+    
+    position:relative;
+    background-color: white;
+    /* height: 100%; */
+}
+#Skills{
+  
+    clear:both;
+    background-color: #e6e6e6;
+}
+#about p{
+    margin-top: 100px;
+    width:50%;
+    padding:5% 0% 0% 15%;
+}
+.web,.prog,.dsa{
+    width:40%;
+}
+.prog,.j{
+    clear:both;
+}
+.web,.dsa{
+    float:right;
+}
+
+
+.css-port img{
+    float:left;
+    width:65%;
+    height:65%;
+    padding: 20px;
+}
+.css-port:hover {
+    background-color: rgb(181, 181, 227) ;
+    
+}
+.css-port{
+    display: inline-block;
+    width: 40%;
+    font-family: "Open Sans", sans-serif;
+    
+    margin-left:30%;
+}
+a,h3{
+    text-decoration:none;
+    color:rgb(3, 2, 62);
+}
+.css-port h3 {
+    text-align: center;
+    color: #0056b3;
+}
+.hier{
+    color:blue;
+    font-size: 1.2rem;
+}
+
+#contact {
+    
+    background-color: #e6e6e6;
+    text-align: center; /* Center the button */
+}
+.contact_details{
+    color:green;
+}
+
+/* Button Styles */
+#showFormButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+#showFormButton:hover {
+    background-color: #0056b3;
+}
+
+/* Form Styles */
+form {
+    margin-top: 20px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+
+#chatWidgetMinimized {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px; 
+    height: 50px; 
+    background-color: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    z-index: 9999;
+}
+
+#chatLogo {
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+#chatWidgetMinimized:hover {
+    transform: scale(1.1); 
+}
+
+#chatWidgetExpanded {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #3729d5b1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: none;
+}
+
+#chatDisplay {
+    height: 250px;
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+.user-message {
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.bot-message {
+    margin-bottom: 10px;
+    color: #ff0000;
+}
+
+#userInput {
+    width: calc(100% - 60px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+#sendButton {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#sendButton:hover {
+    background-color: #0056b3;
+}
+
+.project-carousel .project:not(:first-child) {
+    display: none;
+}
+
+.project-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.project-button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.project-button:hover {
+    background-color: #0056b3;
+}

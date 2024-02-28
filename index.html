@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreyash Bankar - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <div class="header">
+        <h1>Shreyash Bankar</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Home</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="./assets/images/Simple Typography We are Open Facebook Post (1).png" alt="image">
+        <div class="imgages">
+            <p>Hello there! Welcome to my online space. I'm Shreyash Bankar, a super enthusiastic programmer with a big goal: turning ideas into real things. Seriously, it's like my life's mission! Whether you're here to check out my cool projects, learn more about my journey, or maybe chat about working together, I'm so excited to have you here. Get ready for a fun ride!</p>
+            <div class="socialMedia">
+                <a href="https://www.linkedin.com/in/shreyash-bankar-28b304262/" target="_blank" ><img src="./assets/images/linked in.png" alt="linkedin_image" ></a>
+                <a href="https://github.com/Shreyash-Bankar" target="_blank" ><img src="./assets/images/github.png" alt="github_image" ></a>
+                <a href="https://twitter.com/ShreyashBankar2" target="_blank" ><img src="./assets/images/x.png" alt="x_image" ></a>
+            </div>
+        </div>
+    </section>
+    <section id="Skills">
+        <h2>My Skills</h2>
+        
+        <ul class="skills">
+            <div class="animated-text">I am good at <span></span></div>
+        </ul>
+        <diV class="skillspara">
+            
+            <p class="web">As a Web Developer, I possess much of proficiency in the key front-end technologies such as CSS, HTML, and JavaScript. My expertise that lies in HTML serves as the structural foundation for accessible, mind you, and well-organized web pages.</p>
+            <p class="prog">Building upon a solid foundation in programming and all, I am well-versed in Java as well as C++. These languages allow me to navigate through complex backend tasks quite efficiently, and thereby making sure that the seamless functioning of web applications is going just fine. Whether it's all about handling data processing or the implementing of server-side functionalities, my proficiency in Java and C++ enables me to deliver robust as well as scalable solutions</p>
+            <p class="dsa">My knowledge concerning Data Structures and Algorithms, oh boy, it forms a cornerstone in my approach to problem-solving. This expertise is something which indeed happens to be instrumental in creating optimized and efficient solutions. Whether it's optimizing code for better performance or devising scalable systems, my understanding of DSA empowers me to approach development challenges with quite a strategic mindset. This will ensure the reliability and efficiency of the software systems I design.</p>
+            <p class="j"></p>
+        </diV>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="project-carousel">
+            <div class="project" data-project="1">
+                
+                <div class="css-port">
+                    <a href="https://shreyash-bankar.github.io/my-css-portfolio/index.html" target="_blank"><h3>Portfolio website(using HTML and CSS only)</h3></a>
+                    <a href="https://shreyash-bankar.github.io/my-css-portfolio/index.html" target="_blank"><img src="./assets/GIF/css-portfolio.gif"></a>
+                    <a href="https://shreyash-bankar.github.io/my-css-portfolio/index.html" target="_blank"><p>My portfolio website, crafted meticulously with HTML and CSS, showcases my creativity and skills in web development. Utilizing the power of CSS animations through keyframe and transition tags, I've brought elements to life, adding flair and interactivity to the user experience. From smooth transitions between pages to subtle hover effects on project thumbnails, every detail is carefully designed to engage visitors and highlight my work effectively. With a clean and modern aesthetic, my website not only serves as a platform to display my projects but also demonstrates my proficiency in front-end web development techniques.</p></a>
+                </div>
+            </div>
+            <div class="project" data-project="2">
+                <div class="css-port">
+                <a href="https://shreyash-bankar.github.io/Capstone-1/"target="_blank"><h3>My Resume</h3></a>
+                <a href="https://shreyash-bankar.github.io/Capstone-1/"target="_blank"><img src="./assets/images/Screenshot (92).png"></a>
+                <a href="https://shreyash-bankar.github.io/Capstone-1/"target="_blank"><p>As a skilled Web Developer proficient in CSS, HTML, and JavaScript, with a background in Java and C++, I bring a robust set of programming skills to any project. Alongside my expertise in web technologies, I possess a solid understanding of Data Structures and Algorithms, enhancing my ability to develop efficient and scalable solutions. With a passion for coding and a keen interest in exploring new technologies, I continuously strive to deliver high-quality, innovative solutions. Beyond the realm of programming, I find joy in playing cricket, indulging in music, and continually honing my skills. Holding a B-Tech degree with a notable academic record including an impressive CGPA of 8.84, 93.17% in 12th grade, and 91.2% in 10th grade, I am committed to excelling in both professional endeavors and personal pursuits.</p></a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="project-buttons">
+            <button class="project-button" data-project="1">1</button>
+            <button class="project-button" data-project="2">2</button>
+            
+        </div>
+    </section>
+    
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>For collaboration or inquiries, please feel free to reach out to me at: <span class="contact_details"> <br>shreyashbankar10@gmail.com<br>7892839273</p></span>
+        <p><sapn class=" hier">WE ARE LOOKING FOR A WEB DEVELOPER<br></sapn>To streamline the hiring process of a web developer, kindly fill out this form to apply:</p>
+
+        <button id="showFormButton">Hiring Form</button>
+       
+        <form id="contactForm" style="display: none;">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required><br><br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+   
+    <footer>
+        <p>&copy; 2024 Shreyash Bankar. All rights reserved.</p>
+    </footer>
+
+    <div id="chatWidgetMinimized">
+        <img src="./assets/images/images.jpeg" alt="Chat" id="chatLogo">
+    </div>
+
+    <div id="chatWidgetExpanded">
+        <div id="chatDisplay"></div>
+        <input type="text" id="userInput" placeholder="Type your message...">
+        <button id="sendButton">Send</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <script src="script.js"></script>
+</body>
+</html>
